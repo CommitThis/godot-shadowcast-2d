@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="16"
+   viewBox="0 0 16 16"
+   width="16"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="SCShadowContext.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1">
+      <path
+         id="path1"
+         style="fill:#b81b74;stroke:#b81b74;stroke-width:0"
+         d="M 31.451198,1.4258784 31.862509,13.874891 19.304197,13.491001 Z"
+         sodipodi:nodetypes="cccc" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="36.46875"
+     inkscape:cx="-1.2476435"
+     inkscape:cy="12.435304"
+     inkscape:window-width="3440"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <circle
+     cx="8"
+     cy="8"
+     r="5"
+     fill="none"
+     stroke-width="2"
+     stroke="#8da5f3"
+     id="circle1"
+     style="stroke:#f95db5;stroke-opacity:1" />
+  <circle
+     cx="25.364182"
+     cy="7.4952869"
+     r="5"
+     fill="none"
+     stroke-width="2"
+     stroke="#8da5f3"
+     id="circle1-8"
+     clip-path="url(#clipPath1)"
+     style="stroke:#a4005d;stroke-opacity:1"
+     transform="translate(-17.368685,0.50160461)" />
+</svg>

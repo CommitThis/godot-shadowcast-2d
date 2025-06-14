@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="16"
+   viewBox="0 0 16 16"
+   width="16"
+   version="1.1"
+   id="svg12"
+   sodipodi:docname="SCShadowMaterial.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs12">
+    <linearGradient
+       x2="0"
+       y2="16"
+       gradientUnits="userSpaceOnUse"
+       id="a-5"
+       gradientTransform="translate(16.846486,-0.02806818)">
+      <stop
+         offset="0.1875"
+         stop-color="#ff4545"
+         id="stop1-1"
+         style="stop-color:#ae0909;stop-opacity:1;" />
+      <stop
+         stop-color="#ffe345"
+         id="stop2-7"
+         offset="0"
+         style="stop-color:#736200;stop-opacity:1;" />
+      <stop
+         offset="0.3125"
+         stop-color="#ffe345"
+         id="stop3-1"
+         style="stop-color:#736200;stop-opacity:1;" />
+      <stop
+         stop-color="#80ff45"
+         id="stop4-1"
+         offset="0"
+         style="stop-color:#2b8600;stop-opacity:1;" />
+      <stop
+         offset="0.4375"
+         stop-color="#80ff45"
+         id="stop5-5"
+         style="stop-color:#2b8600;stop-opacity:1;" />
+      <stop
+         stop-color="#45ffa2"
+         id="stop6-2"
+         offset="0"
+         style="stop-color:#009d4f;stop-opacity:1;" />
+      <stop
+         offset="0.5625"
+         stop-color="#45ffa2"
+         id="stop7-7"
+         style="stop-color:#009d4f;stop-opacity:1;" />
+      <stop
+         stop-color="#45d7ff"
+         id="stop8-6"
+         offset="0"
+         style="stop-color:#007596;stop-opacity:1;" />
+      <stop
+         offset="0.6875"
+         stop-color="#45d7ff"
+         id="stop9-1"
+         style="stop-color:#007596;stop-opacity:1;" />
+      <stop
+         stop-color="#8045ff"
+         id="stop10-4"
+         offset="0"
+         style="stop-color:#310099;stop-opacity:1;" />
+      <stop
+         offset="0.8125"
+         stop-color="#8045ff"
+         id="stop11-2"
+         style="stop-color:#310099;stop-opacity:1;" />
+      <stop
+         stop-color="#ff4596"
+         id="stop12-3"
+         offset="0"
+         style="stop-color:#730032;stop-opacity:1;" />
+    </linearGradient>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath14">
+      <path
+         style="fill:#b81b74;stroke:#e7e7e7;stroke-width:0"
+         d="M 19.843184,12.965466 30.5625,2.34375 33.59375,5.25 33.421875,16.234375 17.078125,15.515625 Z"
+         id="path15"
+         sodipodi:nodetypes="cccccc" />
+    </clipPath>
+    <linearGradient
+       x2="0"
+       y2="16"
+       gradientUnits="userSpaceOnUse"
+       id="a-7"
+       gradientTransform="translate(16.386485,0.05110706)">
+      <stop
+         offset=".1875"
+         stop-color="#ff4545"
+         id="stop1-9" />
+      <stop
+         stop-color="#ffe345"
+         id="stop2-3" />
+      <stop
+         offset=".3125"
+         stop-color="#ffe345"
+         id="stop3-19" />
+      <stop
+         stop-color="#80ff45"
+         id="stop4-8" />
+      <stop
+         offset=".4375"
+         stop-color="#80ff45"
+         id="stop5-6" />
+      <stop
+         stop-color="#45ffa2"
+         id="stop6-5" />
+      <stop
+         offset=".5625"
+         stop-color="#45ffa2"
+         id="stop7-0" />
+      <stop
+         stop-color="#45d7ff"
+         id="stop8-2" />
+      <stop
+         offset=".6875"
+         stop-color="#45d7ff"
+         id="stop9-8" />
+      <stop
+         stop-color="#8045ff"
+         id="stop10-6" />
+      <stop
+         offset=".8125"
+         stop-color="#8045ff"
+         id="stop11-0" />
+      <stop
+         stop-color="#ff4596"
+         id="stop12-2" />
+    </linearGradient>
+    <linearGradient
+       x2="0"
+       y2="16"
+       gradientUnits="userSpaceOnUse"
+       id="a-5-4"
+       gradientTransform="translate(16.846486,-0.02806818)">
+      <stop
+         offset="0.1875"
+         stop-color="#ff4545"
+         id="stop1-1-8"
+         style="stop-color:#ae0909;stop-opacity:1;" />
+      <stop
+         stop-color="#ffe345"
+         id="stop2-7-6"
+         offset="0"
+         style="stop-color:#736200;stop-opacity:1;" />
+      <stop
+         offset="0.3125"
+         stop-color="#ffe345"
+         id="stop3-1-5"
+         style="stop-color:#736200;stop-opacity:1;" />
+      <stop
+         stop-color="#80ff45"
+         id="stop4-1-0"
+         offset="0"
+         style="stop-color:#2b8600;stop-opacity:1;" />
+      <stop
+         offset="0.4375"
+         stop-color="#80ff45"
+         id="stop5-5-9"
+         style="stop-color:#2b8600;stop-opacity:1;" />
+      <stop
+         stop-color="#45ffa2"
+         id="stop6-2-0"
+         offset="0"
+         style="stop-color:#009d4f;stop-opacity:1;" />
+      <stop
+         offset="0.5625"
+         stop-color="#45ffa2"
+         id="stop7-7-0"
+         style="stop-color:#009d4f;stop-opacity:1;" />
+      <stop
+         stop-color="#45d7ff"
+         id="stop8-6-6"
+         offset="0"
+         style="stop-color:#007596;stop-opacity:1;" />
+      <stop
+         offset="0.6875"
+         stop-color="#45d7ff"
+         id="stop9-1-1"
+         style="stop-color:#007596;stop-opacity:1;" />
+      <stop
+         stop-color="#8045ff"
+         id="stop10-4-3"
+         offset="0"
+         style="stop-color:#310099;stop-opacity:1;" />
+      <stop
+         offset="0.8125"
+         stop-color="#8045ff"
+         id="stop11-2-8"
+         style="stop-color:#310099;stop-opacity:1;" />
+      <stop
+         stop-color="#ff4596"
+         id="stop12-3-9"
+         offset="0"
+         style="stop-color:#730032;stop-opacity:1;" />
+    </linearGradient>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath14-3">
+      <path
+         style="fill:#b81b74;stroke:#e7e7e7;stroke-width:0"
+         d="M 19.843184,12.965466 30.5625,2.34375 33.59375,5.25 33.421875,16.234375 17.078125,15.515625 Z"
+         id="path15-4"
+         sodipodi:nodetypes="cccccc" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview12"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="22.627417"
+     inkscape:cx="13.390835"
+     inkscape:cy="5.3695921"
+     inkscape:window-width="2003"
+     inkscape:window-height="1211"
+     inkscape:window-x="1204"
+     inkscape:window-y="83"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg12" />
+  <linearGradient
+     x2="0"
+     y2="16"
+     gradientUnits="userSpaceOnUse"
+     id="a">
+    <stop
+       offset=".1875"
+       stop-color="#ff4545"
+       id="stop1" />
+    <stop
+       stop-color="#ffe345"
+       id="stop2" />
+    <stop
+       offset=".3125"
+       stop-color="#ffe345"
+       id="stop3" />
+    <stop
+       stop-color="#80ff45"
+       id="stop4" />
+    <stop
+       offset=".4375"
+       stop-color="#80ff45"
+       id="stop5" />
+    <stop
+       stop-color="#45ffa2"
+       id="stop6" />
+    <stop
+       offset=".5625"
+       stop-color="#45ffa2"
+       id="stop7" />
+    <stop
+       stop-color="#45d7ff"
+       id="stop8" />
+    <stop
+       offset=".6875"
+       stop-color="#45d7ff"
+       id="stop9" />
+    <stop
+       stop-color="#8045ff"
+       id="stop10" />
+    <stop
+       offset=".8125"
+       stop-color="#8045ff"
+       id="stop11" />
+    <stop
+       stop-color="#ff4596"
+       id="stop12" />
+  </linearGradient>
+  <path
+     d="M1 2a1 1 0 0 1 1-1h8l5 5v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm2 1v10h10V7h-3a1 1 0 0 1-1-1V3z"
+     fill="url(#a)"
+     id="path12"
+     style="fill:#f95db5;fill-opacity:1" />
+  <path
+     d="m 17.846486,1.9719318 a 1,1 0 0 1 1,-0.99999998 h 8 l 5,4.99999998 v 8.0000002 a 1,1 0 0 1 -1,1 h -12 a 1,1 0 0 1 -1,-1 z m 2,1 V 12.971932 h 10 V 6.9719318 h -3 a 1,1 0 0 1 -1,-1 v -3 z"
+     fill="url(#a)"
+     id="path12-2"
+     style="fill:#a4005d;fill-opacity:1"
+     clip-path="url(#clipPath14)"
+     transform="translate(-16.845792,0.03370085)" />
+</svg>

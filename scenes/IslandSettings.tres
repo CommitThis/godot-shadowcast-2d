@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SCShadowSettings" load_steps=2 format=3 uid="uid://rp8vbv5f28me"]
+
+[ext_resource type="Script" uid="uid://dy8pv2tjg5l2a" path="res://addons/c9.shadowcast-2d/scripts/SCShadowSettings.gd" id="1_typu6"]
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource("1_typu6")
+sample_method = 1
+height_sample = 2
+light_method = 1
+fade_under = 0.0
+falloff = 1
+max_steps = 500
+ray_step_scale = 1.0
+shadow_strength = 0.878
+overscan = 1.5
+disable_shadows = false

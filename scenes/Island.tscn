@@ -1,0 +1,298 @@
+[gd_scene load_steps=32 format=3 uid="uid://ftvcdkwmbs2r"]
+
+[ext_resource type="Texture2D" uid="uid://c8oavgixatinp" path="res://scenes/background.png" id="1_k0xg1"]
+[ext_resource type="Script" uid="uid://4ir6xhkxwenk" path="res://scenes/Island.gd" id="1_s8pn6"]
+[ext_resource type="Texture2D" uid="uid://ddhxpw1kghnsh" path="res://scenes/background_normal.png" id="2_sqpwh"]
+[ext_resource type="PackedScene" uid="uid://bn5odketmm77g" path="res://addons/c9.shadowcast-2d/scenes/SCShadowContext.tscn" id="2_wkngv"]
+[ext_resource type="Script" uid="uid://66iw2csx7akm" path="res://addons/c9.shadowcast-2d/scripts/SCHeightSprite2D.gd" id="3_nl2ei"]
+[ext_resource type="Texture2D" uid="uid://dq12wle71tob8" path="res://scenes/island_height.normalmap.png" id="6_c6oos"]
+[ext_resource type="Texture2D" uid="uid://b7oedv83x48dp" path="res://scenes/island_diffuse.png" id="6_nwr1j"]
+[ext_resource type="Script" uid="uid://caxyk25iy52lg" path="res://addons/c9.shadowcast-2d/scripts/SCShadowMaterial.gd" id="7_e33el"]
+[ext_resource type="Texture2D" uid="uid://bnj62pvqnn6y2" path="res://scenes/island_height.heightmap.exr" id="8_sxrkr"]
+[ext_resource type="Texture2D" uid="uid://dwmlb4632psj" path="res://scenes/point_light_texture.png" id="9_8e5dd"]
+[ext_resource type="Texture2D" uid="uid://b36dkyrkqjajh" path="res://addons/c9.shadowcast-2d/textures/black.png" id="10_x8553"]
+[ext_resource type="Resource" uid="uid://rp8vbv5f28me" path="res://scenes/IslandSettings.tres" id="11_k3e0w"]
+[ext_resource type="Script" uid="uid://b3rly2ttxeytx" path="res://scenes/SeaSprite_Left.gd" id="12_k3e0w"]
+[ext_resource type="Texture2D" uid="uid://xrklfx3y4qvq" path="res://scenes/smiley.png" id="14_o7xu6"]
+[ext_resource type="Texture2D" uid="uid://dksnlxqob4mff" path="res://scenes/sphere.normalmap.png" id="16_c6oos"]
+[ext_resource type="Texture2D" uid="uid://drsvid55hu0ya" path="res://scenes/sphere.heightmap.exr" id="17_sxrkr"]
+
+[sub_resource type="Shader" id="Shader_wkngv"]
+code = "
+shader_type canvas_item;
+
+#define FALLOFF_NONE        0
+#define FALLOFF_SIGMOID     1
+#define FALLOFF_EXPONENTIAL 2
+#define FALLOFF_LINEAR      3
+
+#define HEIGHT_SAMPLE_BOTH
+#define SAMPLE_BILINEAR
+#define SHADE_PHONG
+
+#define FALLOFF_IS FALLOFF_SIGMOID
+
+#include \"res://addons/c9.shadowcast-2d/shaders/ShadowShader.gdshaderinc\"
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vn25o"]
+Resource = null
+resource_path = "res://scenes/Island.tscn::ShaderMaterial_vn25o"
+resource_scene_unique_id = "ShaderMaterial_vn25o"
+render_priority = 0
+shader = SubResource("Shader_wkngv")
+shader_parameter/scale = 255.0
+shader_parameter/max_steps = 500
+shader_parameter/ray_step_scale = 1.0
+shader_parameter/shadow_strength = 0.878
+shader_parameter/overscan = 1.5
+shader_parameter/falloff_alpha = 0.0
+shader_parameter/disable_shadows = false
+script = ExtResource("7_e33el")
+shadow_context = NodePath("../SCShadowContext")
+shadow_settings = ExtResource("11_k3e0w")
+metadata/_custom_type_script = "uid://caxyk25iy52lg"
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_q16il"]
+diffuse_texture = ExtResource("6_nwr1j")
+normal_texture = ExtResource("6_c6oos")
+
+[sub_resource type="Shader" id="Shader_0bpvh"]
+code = "
+shader_type canvas_item;
+
+#define FALLOFF_NONE        0
+#define FALLOFF_SIGMOID     1
+#define FALLOFF_EXPONENTIAL 2
+#define FALLOFF_LINEAR      3
+
+#define HEIGHT_SAMPLE_BOTH
+#define SAMPLE_BILINEAR
+#define SHADE_PHONG
+
+#define FALLOFF_IS FALLOFF_SIGMOID
+
+#include \"res://addons/c9.shadowcast-2d/shaders/ShadowShader.gdshaderinc\"
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lagd2"]
+Resource = null
+resource_path = "res://scenes/Island.tscn::ShaderMaterial_lagd2"
+resource_scene_unique_id = "ShaderMaterial_lagd2"
+render_priority = 0
+shader = SubResource("Shader_0bpvh")
+shader_parameter/scale = 255.0
+shader_parameter/max_steps = 500
+shader_parameter/ray_step_scale = 1.0
+shader_parameter/shadow_strength = 0.878
+shader_parameter/overscan = 1.5
+shader_parameter/falloff_alpha = 7.3
+shader_parameter/disable_shadows = false
+script = ExtResource("7_e33el")
+shadow_context = NodePath("../SCShadowContext")
+shadow_settings = ExtResource("11_k3e0w")
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_3cvny"]
+diffuse_texture = ExtResource("1_k0xg1")
+normal_texture = ExtResource("2_sqpwh")
+
+[sub_resource type="Shader" id="Shader_k3e0w"]
+code = "
+shader_type canvas_item;
+
+#define FALLOFF_NONE        0
+#define FALLOFF_SIGMOID     1
+#define FALLOFF_EXPONENTIAL 2
+#define FALLOFF_LINEAR      3
+
+#define HEIGHT_SAMPLE_BOTH
+#define SAMPLE_BILINEAR
+#define SHADE_PHONG
+
+#define FALLOFF_IS FALLOFF_SIGMOID
+
+#include \"res://addons/c9.shadowcast-2d/shaders/ShadowShader.gdshaderinc\"
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ly7cd"]
+Resource = null
+resource_path = "res://scenes/Island.tscn::ShaderMaterial_ly7cd"
+resource_scene_unique_id = "ShaderMaterial_ly7cd"
+render_priority = 0
+shader = SubResource("Shader_k3e0w")
+shader_parameter/scale = 255.0
+shader_parameter/max_steps = 500
+shader_parameter/ray_step_scale = 1.0
+shader_parameter/shadow_strength = 0.878
+shader_parameter/overscan = 1.5
+shader_parameter/falloff_alpha = 0.0
+shader_parameter/disable_shadows = false
+script = ExtResource("7_e33el")
+shadow_context = NodePath("../SCShadowContext")
+shadow_settings = ExtResource("11_k3e0w")
+metadata/_custom_type_script = "uid://caxyk25iy52lg"
+
+[sub_resource type="Shader" id="Shader_vn25o"]
+code = "
+shader_type canvas_item;
+
+#define FALLOFF_NONE        0
+#define FALLOFF_SIGMOID     1
+#define FALLOFF_EXPONENTIAL 2
+#define FALLOFF_LINEAR      3
+
+#define HEIGHT_SAMPLE_BOTH
+#define SAMPLE_BILINEAR
+#define SHADE_PHONG
+
+#define FALLOFF_IS FALLOFF_SIGMOID
+
+#include \"res://addons/c9.shadowcast-2d/shaders/ShadowShader.gdshaderinc\"
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gu1gd"]
+Resource = null
+resource_path = "res://scenes/Island.tscn::ShaderMaterial_gu1gd"
+resource_scene_unique_id = "ShaderMaterial_gu1gd"
+render_priority = 0
+shader = SubResource("Shader_vn25o")
+shader_parameter/scale = 255.0
+shader_parameter/max_steps = 500
+shader_parameter/ray_step_scale = 1.0
+shader_parameter/shadow_strength = 0.878
+shader_parameter/overscan = 1.5
+shader_parameter/falloff_alpha = 7.3
+shader_parameter/disable_shadows = false
+script = ExtResource("7_e33el")
+shadow_context = NodePath("../SCShadowContext")
+shadow_settings = ExtResource("11_k3e0w")
+
+[sub_resource type="Shader" id="Shader_ly7cd"]
+code = "
+shader_type canvas_item;
+
+#define FALLOFF_NONE        0
+#define FALLOFF_SIGMOID     1
+#define FALLOFF_EXPONENTIAL 2
+#define FALLOFF_LINEAR      3
+
+#define HEIGHT_SAMPLE_BOTH
+#define SAMPLE_BILINEAR
+#define SHADE_PHONG
+
+#define FALLOFF_IS FALLOFF_SIGMOID
+
+#include \"res://addons/c9.shadowcast-2d/shaders/ShadowShader.gdshaderinc\"
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0bpvh"]
+Resource = null
+resource_path = "res://scenes/Island.tscn::ShaderMaterial_0bpvh"
+resource_scene_unique_id = "ShaderMaterial_0bpvh"
+render_priority = 0
+shader = SubResource("Shader_ly7cd")
+shader_parameter/scale = 255.0
+shader_parameter/max_steps = 500
+shader_parameter/ray_step_scale = 1.0
+shader_parameter/shadow_strength = 0.878
+shader_parameter/overscan = 1.5
+shader_parameter/falloff_alpha = 0.0
+shader_parameter/disable_shadows = false
+script = ExtResource("7_e33el")
+shadow_context = NodePath("../ShadowContext")
+shadow_settings = ExtResource("11_k3e0w")
+metadata/_custom_type_script = "uid://caxyk25iy52lg"
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_c1lld"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_wkngv"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_uc78h"]
+diffuse_texture = ExtResource("14_o7xu6")
+normal_texture = ExtResource("16_c6oos")
+
+[node name="Island" type="Node2D"]
+script = ExtResource("1_s8pn6")
+
+[node name="SCShadowContext" parent="." node_paths=PackedStringArray("camera_leader") instance=ExtResource("2_wkngv")]
+resolution = Vector2(1152, 648)
+overscan = 1.5
+camera_leader = NodePath("../Camera2D")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.385493, 0.385493, 0.385491, 1)
+
+[node name="IslandSprite" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_vn25o")
+position = Vector2(567, 321)
+scale = Vector2(0.8, 0.8)
+texture = SubResource("CanvasTexture_q16il")
+script = ExtResource("3_nl2ei")
+height_texture = ExtResource("8_sxrkr")
+
+[node name="SeaSprite_Upper" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_lagd2")
+position = Vector2(-171.5, -460)
+scale = Vector2(1961, 1000)
+texture = SubResource("CanvasTexture_3cvny")
+script = ExtResource("3_nl2ei")
+height_texture = ExtResource("10_x8553")
+
+[node name="SeaSprite_Left" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_ly7cd")
+position = Vector2(-420, 700.5)
+scale = Vector2(1464, 1321)
+texture = SubResource("CanvasTexture_3cvny")
+script = ExtResource("12_k3e0w")
+
+[node name="SeaSprite_Bottom" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_lagd2")
+position = Vector2(1352.5, 982)
+scale = Vector2(2081, 758)
+texture = SubResource("CanvasTexture_3cvny")
+script = ExtResource("3_nl2ei")
+height_texture = ExtResource("10_x8553")
+
+[node name="SeaSprite_Right" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_gu1gd")
+position = Vector2(1601, -178.5)
+scale = Vector2(1584, 1563)
+texture = SubResource("CanvasTexture_3cvny")
+script = ExtResource("3_nl2ei")
+height_texture = ExtResource("10_x8553")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+material = SubResource("ShaderMaterial_0bpvh")
+position = Vector2(576, 324)
+
+[node name="BackgroundContents" type="Sprite2D" parent="Camera2D"]
+visible = false
+position = Vector2(-425, 236)
+texture = SubResource("PlaceholderTexture2D_c1lld")
+
+[node name="ForegroundContents" type="Sprite2D" parent="Camera2D"]
+visible = false
+position = Vector2(425, 236)
+texture = SubResource("PlaceholderTexture2D_c1lld")
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+visible = false
+rotation = 0.656244
+energy = 0.7
+height = 0.56
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(379, 55)
+scale = Vector2(8, 8)
+energy = 0.8
+texture = ExtResource("9_8e5dd")
+height = 482.0
+
+[node name="Smiley" type="Sprite2D" parent="."]
+material = SubResource("CanvasItemMaterial_wkngv")
+position = Vector2(514, -31)
+texture = SubResource("CanvasTexture_uc78h")
+script = ExtResource("3_nl2ei")
+height_texture = ExtResource("17_sxrkr")
+render_to = 1
+base_height = 200.0
